@@ -1,13 +1,14 @@
-<div class="gid">GID</div>
-<input nz-input nzType="primary" [(ngModel)]="user.username" />
-<div class="psw">Windows Password</div>
-<input nz-input type="password" [(ngModel)]="user.password" maxlength="24" size="24" />
-<div>
-  <label nz-checkbox ngDefaultControl [(ngModel)]="user.rememberMe">Remember my login on this computer</label>
+<div class="login-form">
+  <div class="gid">GID</div>
+  <input nz-input nzType="primary" [(ngModel)]="user.username" maxlength="12" size="12" />
+  <div class="psw">Windows Password</div>
+  <input nz-input type="password" [(ngModel)]="user.password" maxlength="24" size="24" />
+  <div style="height: 64px">
+    <label nz-checkbox ngDefaultControl [(ngModel)]="user.rememberMe">Remember my login on this computer</label>
+  </div>
+  <nav>
+    <button nz-button nzType="primary" (click)="login()">
+      <div>Login</div>
+    </button>
+  </nav>
 </div>
-<nav>
-  <button nz-button nzType="primary" (click)="login()">
-    <p>Login</p>
-  </button>
-</nav>
-
