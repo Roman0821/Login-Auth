@@ -1,0 +1,16 @@
+<full-calendar
+      #calendar
+      defaultView="timeGridWeek"
+      [plugins]="calendarPlugins"
+      [weekends]="calendarWeekends"
+      [eventSources]="eventSources"
+      [allDaySlot] = "false"
+      minTime = "08:00:00"
+      maxTime = "19:00:00"
+      slotDuration = "01:00:00"
+      height = "parent"
+      [header]= "{left: 'prev', center: 'title', right: 'next'}"
+      [titleFormat] = "{year: 'numeric', month: 'long', day: 'numeric'}"
+      [columnHeaderFormat] = "{ weekday: 'long', day: 'numeric' }"
+    >
+  </full-calendar>
